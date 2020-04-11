@@ -1,0 +1,27 @@
+.about-section {
+  background: linear-gradient(to bottom, rgba(0,0,26,1) 100% 0%,#{fade-out($black, .1)} 75%,#{fade-out($black, .2)} 100%);
+  background-color: #0078ff;
+  p {
+    margin-bottom: 5rem;
+  }
+  .flex-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .sub-section{
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    
+    .img-section{
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+  }
+
+}

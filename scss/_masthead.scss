@@ -1,0 +1,85 @@
+.masthead {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 43);
+  background: -moz-linear-gradient(top, rgb(0, 0, 43) 0%, black 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(0, 0, 43)), color-stop(100%, black));
+  background: -webkit-linear-gradient(top, rgb(0, 0, 43) 0%, black 100%);
+  background: -o-linear-gradient(top, rgb(0, 0, 43) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgb(0, 0, 43) 0%, black 100%);
+  background: linear-gradient(to bottom, rgb(0, 0, 43) 0%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000059', endColorstr='#00001a', GradientType=0 );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+
+  h1 {
+    color: white;
+    font-family: "Raleway";
+    font-size: 2em;
+    font-weight: bold;
+  }
+  h2 {
+    max-width: 20rem;
+    font-size: 1rem;
+  }
+
+  .social-networks {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .row {
+      width: 70%;
+      .social-network-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          .hint {
+            display: block;
+            background-color: white;
+            color: rgb(0, 0, 32);
+            font-weight: bolder;
+            border-radius: 10px;
+            padding: 1px 3em;
+            transform: scale(0.8);
+          }
+          .social-network-icon {
+            background-color: white;
+            transform: scale(1.2);
+            i {
+              font-weight: bolder !important;
+              color: rgb(0, 0, 32) !important;
+            }
+          }
+        }
+
+        .hint {
+          display: none;
+          position: absolute;
+          bottom: -80px;
+          color: white;
+          transition: 1s;
+        }
+
+        .social-network-icon {
+          border: 1px solid white;
+          justify-content: center;
+          border-radius: 100%;
+          align-items: center;
+          color: white;
+          display: flex;
+          transition: 0.3s;
+
+          i {
+            margin: 0;
+            padding: 0;
+            color: white !important;
+          }
+        }
+      }
+    }
+  }
+}
